@@ -5,11 +5,12 @@
  * @ptr: pointer to the count variable
  * Return: No return value
  */
+
 int bin(unsigned int n, int *ptr)
 {
 	char c;
 
-	(*ptr)++;
+	*ptr++;
 	if (n / 2 > 0)
 	{
 		bin(n / 2, ptr);
