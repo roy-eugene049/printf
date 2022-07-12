@@ -15,14 +15,6 @@ int write_str(char *s)
 		write(1, s, 6);
 		return (6);
 	}
-	for (i = 0; s[i]; i++)
-	{
-		if ((s[i] < 32 && s[i] > 0) || s[i] >= 127)
-		{
-			_putchar('\\');
-			_putchar('x');
-		}
-	}
 	length = _strlen(s);
 
 	write(1, s, length);
