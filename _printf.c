@@ -11,6 +11,12 @@ int _printf(const char *format, ...)
 	int len, i, num_char = 0;
 	va_list args;
 
+	if (format == NULL)
+		return (-1);
+	len = _strlen(format);
+
+	if (format[0] == '%' && len == 1)
+		return (-1);
 	va_start(args, format);
 	for (i = 0; format[i]; i++)
 	{
