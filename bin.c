@@ -10,7 +10,7 @@ int bin(unsigned int n, int *ptr)
 {
 	char c;
 
-	*ptr++;
+	(*ptr)++;
 	if (n / 2 > 0)
 	{
 		bin(n / 2, ptr);
