@@ -15,4 +15,4 @@ int write_str(char *s);
 int check_mode(char c);
 void check_func(va_list, char c, int *num_char, int *i);
 
-#endif /* MAIN_H */
+#endif
