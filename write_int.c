@@ -18,13 +18,6 @@ int write_int(int n, int *ptr)
 		return (11);
 	}
 	(*ptr)++;
-	if (n < 0)
-	{
-		c = '-';
-		(*ptr)++;
-		write(1, &c, 1);
-		n = -n;
-	}
 	if (n / 10 > 0)
 		write_int(n / 10, ptr);
 	c = (n % 10) + '0';
