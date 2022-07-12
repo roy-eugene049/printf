@@ -14,6 +14,8 @@ int check_mode(char c)
 	{
 		if (arr[i] == c)
 			return (1);
+		if (c == '\0')
+			return (1);
 	}
 	return (0);
 }
