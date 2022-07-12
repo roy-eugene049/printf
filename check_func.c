@@ -23,7 +23,7 @@ void check_func(va_list args, char c, int *num_char, int *i)
 		(*num_char) += write_char(va_arg(args, int));
 		(*i)++;
 	}
-	else if (c == 'd' && c == 'i')
+	else if (c == 'd' || c == 'i')
 	{
 		(*num_char) += write_int(va_arg(args, int), &p);
 		(*i)++, p = 0;
